@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gizlilik Politikası</title>
+  <style>
+    body {
+      background: #1E1E1E;
+      color: #E0E0E0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .modal {
+      min-height: 100vh;
+      background: rgba(0,0,0,0.5);
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 50px;
+    }
+    .modal-content {
+      background: #1E1E1E;
+      border-radius: 20px 20px 0 0;
+      width: 100%;
+      max-width: 600px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      overflow: hidden;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 1px solid #2A2A2A;
+      background: #232323;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+    }
+    .close-button {
+      font-size: 24px;
+      color: #B0B0B0;
+      text-decoration: none;
+      padding: 8px;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+    .content {
+      padding: 20px;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+    .last-updated {
+      font-size: 12px;
+      color: #B0B0B0;
+      text-align: center;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .section {
+      margin-bottom: 24px;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+    .text {
+      font-size: 14px;
+      color: #E0E0E0;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+    .bullet-point {
+      font-size: 14px;
+      color: #E0E0E0;
+      line-height: 1.5;
+      margin-left: 16px;
+      margin-bottom: 4px;
+      display: block;
+    }
+    @media (max-width: 650px) {
+      .modal-content {
+        max-width: 100vw;
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="modal">
+    <div class="modal-content">
+      <div class="header">
+        <span class="title">Gizlilik Politikası</span>
+        <!-- Kapatma butonu örnek amaçlı, işlevsiz -->
+        <button class="close-button" onclick="window.history.back()">✗</button>
+      </div>
+      <div class="content">
+        <div class="last-updated">Son Güncelleme: 5 Temmuz 2024</div>
+
+        <div class="section">
+          <div class="section-title">1. Toplanan Bilgiler</div>
+          <div class="text">WeightTracker uygulaması aşağıdaki bilgileri toplar:</div>
+          <span class="bullet-point">• Hesap bilgileri (ad, e-posta)</span>
+          <span class="bullet-point">• Fitness verileri (kilo, egzersiz kayıtları)</span>
+          <span class="bullet-point">• Cihaz bilgileri (uygulama kullanım istatistikleri)</span>
+        </div>
+
+        <div class="section">
+          <div class="section-title">2. Bilgilerin Kullanımı</div>
+          <div class="text">Topladığımız bilgileri şu amaçlarla kullanırız:</div>
+          <span class="bullet-point">• Hesabınızı oluşturmak ve yönetmek</span>
+          <span class="bullet-point">• Fitness hedeflerinizi takip etmek</span>
+          <span class="bullet-point">• Uygulama performansını iyileştirmek</span>
+          <span class="bullet-point">• Kişiselleştirilmiş içerik sunmak</span>
+        </div>
+
+        <div class="section">
+          <div class="section-title">3. Bilgi Paylaşımı</div>
+          <div class="text">Kişisel bilgilerinizi üçüncü taraflarla paylaşmayız, ancak:</div>
+          <span class="bullet-point">• Yasal zorunluluk durumunda</span>
+          <span class="bullet-point">• Hizmet sağlayıcılarımızla (Firebase, AdMob)</span>
+          <span class="bullet-point">• Açık rızanız olduğunda</span>
+        </div>
+
+        <div class="section">
+          <div class="section-title">4. Veri Güvenliği</div>
+          <div class="text">Verilerinizi korumak için:</div>
+          <span class="bullet-point">• End-to-end şifreleme kullanırız</span>
+          <span class="bullet-point">• Güvenli sunucu altyapısı</span>
+          <span class="bullet-point">• Düzenli güvenlik güncellemeleri</span>
+        </div>
+
+        <div class="section">
+          <div class="section-title">5. Reklamlar</div>
+          <div class="text">Uygulamamızda Google AdMob reklamları gösterilir:</div>
+          <span class="bullet-point">• Kişiselleştirilmiş reklamlar</span>
+          <span class="bullet-point">• Reklam performans analizi</span>
+          <span class="bullet-point">• Reklam tercihlerini yönetebilirsiniz</span>
+        </div>
+
+        <div class="section">
+          <div class="section-title">6. Çerezler ve Takip</div>
+          <div class="text">Uygulama performansını iyileştirmek için:</div>
+          <span class="bullet-point">• Analitik çerezler</span>
+          <span class="bullet-point">• Reklam çerezleri</span>
+          <span class="bullet-point">• Kullanım istatistikleri</span>
+        </div>
+
+        <div class="section">
+          <div class="section-title">7. Haklarınız</div>
+          <div class="text">Aşağıdaki haklara sahipsiniz:</div>
+          <span class="bullet-point">• Verilerinize erişim</span>
+          <span class="bullet-point">• Veri düzeltme</span>
+          <span class="bullet-point">• Veri silme</span>
+          <span class="bullet-point">• İşlemeye itiraz</span>
+        </div>
+
+        <div class="section">
+          <div class="section-title">8. İletişim</div>
+          <div class="text">Gizlilik ile ilgili sorularınız için:</div>
+          <span class="bullet-point">E-posta: a.bayrgorkem@gmail.com</span>
+        </div>
+
+        <div class="section">
+          <div class="section-title">9. Değişiklikler</div>
+          <div class="text">Bu gizlilik politikası güncellenebilir. Önemli değişiklikler için sizi bilgilendiririz.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
